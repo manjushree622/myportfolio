@@ -1,0 +1,3 @@
+import { FiGithub, FiMail, FiLinkedin, FiArrowUp } from 'react-icons/fi'
+function Footer() { return <footer><div><a className="brand" href="#home">MANJUSHREE<span>.</span></a><p>Computer Science Student | Artificial Intelligence & Data Science</p></div><div className="footer-right"><div className="socials"><a href="https://github.com/manjushree622" aria-label="GitHub"><FiGithub /></a><a href="mailto:manjushree6450@gmail.com" aria-label="Email"><FiMail /></a><a href="#contact" aria-label="LinkedIn placeholder"><FiLinkedin /></a></div><a className="back-top" href="#home">Back to top <FiArrowUp /></a></div><small className="copyright">© 2026 Manjushree. All Rights Reserved.</small></footer> }
+export default Footer

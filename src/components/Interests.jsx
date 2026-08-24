@@ -1,0 +1,4 @@
+import { FiCode, FiCompass, FiPlus, FiCpu, FiBarChart2, FiLayers } from 'react-icons/fi'
+const interests = [['Coding', FiCode], ['New technologies', FiCompass], ['Creating new things', FiPlus], ['Artificial intelligence', FiCpu], ['Data science', FiBarChart2], ['Project development', FiLayers]]
+function Interests() { return <section className="interest-band" id="interests"><div className="section-heading reveal"><p className="kicker">06 / Beyond the code</p><h2>Things that<br /><em>keep me curious.</em></h2></div><div className="interest-list">{interests.map(([name, Icon]) => <div className="interest reveal" key={name}><Icon /><span>{name}</span></div>)}</div></section> }
+export default Interests
