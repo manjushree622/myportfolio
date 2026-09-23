@@ -1,3 +1,67 @@
-import { FiArrowUpRight, FiGithub, FiMail, FiLinkedin, FiCode, FiDatabase, FiCpu } from 'react-icons/fi'
-function Hero() { return <section className="hero-section" id="home"><div className="hero-copy reveal"><p className="eyebrow"><span className="status-dot" /> Available for new opportunities</p><h1>Building ideas<br /><em>into impact.</em></h1><p className="hero-lede">I am a second-year B.Tech student in Artificial Intelligence and Data Science at REVA University, passionate about coding, emerging technologies, and building innovative solutions.</p><div className="hero-actions"><a className="button button-primary" href="#projects">View my projects <FiArrowUpRight /></a><a className="button button-quiet" href="#contact">Contact me</a></div><div className="socials"><a href="https://github.com/manjushree622" target="_blank" rel="noreferrer" aria-label="GitHub"><FiGithub /></a><a href="mailto:manjushree6450@gmail.com" aria-label="Email"><FiMail /></a><a href="#contact" aria-label="LinkedIn placeholder"><FiLinkedin /></a></div></div><div className="hero-visual reveal"><div className="visual-grid" /><div className="code-window"><div className="window-bar"><span /><span /><span /><b>manjushree.py</b></div><pre><code><i>class</i> <strong>FutureBuilder</strong>:{'\n'}  focus = <mark>"AI + data"</mark>{'\n'}  learn = <mark>True</mark>{'\n'}  <i>def</i> <strong>create</strong>(self):{'\n'}    <i>return</i> <mark>"something useful"</mark></code></pre></div><div className="orbit orbit-one"><FiCpu /></div><div className="orbit orbit-two"><FiDatabase /></div><div className="visual-note"><FiCode /><span>Curious by default</span></div></div></section> }
+import {
+  FiArrowUpRight,
+  FiGithub,
+  FiMail,
+  FiLinkedin,
+} from 'react-icons/fi'
+import Robot from './Robot'
+
+function Hero() {
+  return (
+    <section className="hero-section" id="home">
+      <div className="hero-copy reveal">
+        <p className="eyebrow">
+          <span className="status-dot" /> Welcome to my portfolio
+        </p>
+
+        <h1>
+          Manjushree
+        </h1>
+
+        <p className="hero-lede">
+          B.Tech student in Artificial Intelligence and Data Science
+          at REVA University, passionate about coding, emerging
+          technologies, and building innovative solutions.
+        </p>
+
+        <div className="hero-actions">
+          <a className="button button-primary" href="#projects">
+            View my projects <FiArrowUpRight />
+          </a>
+
+          <a className="button button-quiet" href="#contact">
+            Contact me
+          </a>
+        </div>
+
+        <div className="socials">
+          <a
+            href="https://github.com/manjushree622"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
+            <FiGithub />
+          </a>
+
+          <a
+            href="mailto:manjushree6450@gmail.com"
+            aria-label="Email"
+          >
+            <FiMail />
+          </a>
+
+          <a href="#contact" aria-label="LinkedIn">
+            <FiLinkedin />
+          </a>
+        </div>
+      </div>
+
+      <div className="hero-visual reveal">
+        <Robot />
+      </div>
+    </section>
+  )
+}
+
 export default Hero

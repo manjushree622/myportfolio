@@ -1,0 +1,274 @@
+.robot-wrapper {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main robot */
+.robot {
+  position: relative;
+  width: 260px;
+  height: 330px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  animation: robotFloat 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+/* Robot head */
+.robot-head {
+  position: absolute;
+  width: 180px;
+  height: 135px;
+  left: 40px;
+  top: 45px;
+  border-radius: 48px;
+  background: linear-gradient(145deg, #ffffff, #dce5ed);
+  border: 5px solid #263238;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+/* Eyes */
+.robot-eye {
+  position: absolute;
+  width: 25px;
+  height: 35px;
+  top: 43px;
+  border-radius: 50%;
+  background: #263238;
+  transition: all 0.15s ease;
+}
+
+.robot-eye:first-child {
+  left: 42px;
+}
+
+.robot-eye:nth-child(2) {
+  right: 42px;
+}
+
+/* Blinking */
+.robot-eye.blink {
+  height: 5px;
+  top: 58px;
+}
+
+/* Smile */
+.robot-mouth {
+  position: absolute;
+  left: 50%;
+  bottom: 17px;
+  transform: translateX(-50%);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Antenna */
+.robot-antenna {
+  position: absolute;
+  width: 7px;
+  height: 45px;
+  left: 127px;
+  top: 5px;
+  background: #263238;
+  z-index: 2;
+}
+
+.robot-antenna span {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: -7px;
+  top: -15px;
+  border-radius: 50%;
+  background: #6c63ff;
+  box-shadow: 0 0 25px rgba(108, 99, 255, 0.9);
+  animation: antennaGlow 1.5s ease-in-out infinite;
+}
+
+/* Neck */
+.robot-neck {
+  position: absolute;
+  width: 55px;
+  height: 25px;
+  left: 102px;
+  top: 175px;
+  background: #37474f;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+/* Body */
+.robot-body {
+  position: absolute;
+  width: 155px;
+  height: 120px;
+  left: 52px;
+  top: 190px;
+  border-radius: 38px;
+  background: linear-gradient(145deg, #f1f4f6, #aebbc4);
+  border: 5px solid #263238;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Chest */
+.robot-chest {
+  position: absolute;
+  width: 65px;
+  height: 50px;
+  left: 40px;
+  top: 30px;
+  border-radius: 13px;
+  background: #263238;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+/* Arms */
+.robot-arm {
+  position: absolute;
+  width: 28px;
+  height: 80px;
+  top: 15px;
+  border-radius: 18px;
+  background: #b7c2c9;
+  border: 5px solid #263238;
+}
+
+.left-arm {
+  left: -35px;
+  transform: rotate(15deg);
+}
+
+.right-arm {
+  right: -35px;
+  transform: rotate(-15deg);
+}
+
+/* Shadow */
+.robot-shadow {
+  position: absolute;
+  width: 170px;
+  height: 25px;
+  left: 45px;
+  bottom: 5px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.18);
+  animation: shadowMove 3s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes robotFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Click animation */
+.robot-active {
+  animation: robotJump 0.7s ease;
+}
+
+@keyframes robotJump {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+
+  30% {
+    transform: translateY(-35px) rotate(-7deg);
+  }
+
+  60% {
+    transform: translateY(-18px) rotate(7deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+/* Antenna animation */
+@keyframes antennaGlow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: scale(1.35);
+    opacity: 1;
+  }
+}
+
+/* Shadow animation */
+@keyframes shadowMove {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.75);
+  }
+}
+
+/* Message */
+.robot-message {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  width: 210px;
+  padding: 14px 18px;
+  border-radius: 18px;
+  background: white;
+  color: #263238;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  animation: messagePop 0.35s ease-out;
+  z-index: 10;
+}
+
+@keyframes messagePop {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .robot-wrapper {
+    height: 400px;
+  }
+
+  .robot {
+    transform: scale(0.8);
+  }
+
+  .robot:hover {
+    transform: scale(0.85);
+  }
+}
