@@ -50,7 +50,7 @@ function Projects() {
     <section className="section alt-section" id="projects">
       <div className="section-heading split-heading reveal">
         <div>
-          <p className="kicker">04 / Selected work</p>
+          <p className="kicker">04 / My Projects</p>
           <h2>
             Small projects,<br />
             <em>real lessons.</em>
