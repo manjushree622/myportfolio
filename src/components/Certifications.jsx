@@ -1,11 +1,7 @@
 import { FiAward, FiExternalLink } from 'react-icons/fi'
 
 const certificates = [
-  [
-    'IBM Certificate in Python',
-    'IBM',
-    `${import.meta.env.BASE_URL}certificates/IBM.jpeg`
-  ],
+  ['IBM Certificate in Python', 'IBM', `${import.meta.env.BASE_URL}certificates/IBM.jpeg`],
   [
     'Wadhwani Foundation Certificate',
     'Wadhwani Foundation',
