@@ -1,11 +1,11 @@
 import { FiAward, FiExternalLink } from 'react-icons/fi'
 
 const certificates = [
-  ['IBM Certificate in Python', 'IBM', '/certificates/IBM.jpeg'],
-  ['Wadhwani Foundation Certificate', 'Wadhwani Foundation', '/certificates/WADHWANI.jpeg'],
-  ['Instagram Design System Course', 'Instagram', '/certificates/INSTAGRAM.jpeg'],
-  ['Infosys Course Completion', 'Infosys', '/certificates/INFOSYS.jpeg'],
-  ['Udemy Course Completion', 'Udemy', '/certificates/UDEMY.jpeg']
+  ['IBM Certificate in Python', 'IBM', './certificates/IBM.jpeg'],
+  ['Wadhwani Foundation Certificate', 'Wadhwani Foundation', './certificates/WADHWANI.jpeg'],
+  ['Instagram Design System Course', 'Instagram', './certificates/INSTAGRAM.jpeg'],
+  ['Infosys Course Completion', 'Infosys', './certificates/INFOSYS.jpeg'],
+  ['Udemy Course Completion', 'Udemy', './certificates/UDEMY.jpeg']
 ]
 
 function Certifications() {
