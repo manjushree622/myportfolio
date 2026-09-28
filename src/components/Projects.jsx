@@ -1,6 +1,22 @@
-import { FiArrowUpRight, FiLayers, FiMessageCircle, FiZap, FiGlobe } from 'react-icons/fi'
+import {
+  FiArrowUpRight,
+  FiLayers,
+  FiMessageCircle,
+  FiZap,
+  FiGlobe
+} from 'react-icons/fi'
 
 const projects = [
+  {
+    title: 'NER SmartRoute',
+    desc: 'An AI/GIS-based route intelligence platform designed to help users find safer routes using rainfall, terrain, landslide risk, weather, and community road hazard information.',
+    tags: ['React', 'Python', 'AI/GIS'],
+    Icon: FiGlobe,
+    links: [
+      ['View project', 'https://ner-smart-route-2026.vercel.app'],
+      ['GitHub', 'https://github.com/manjushree622/NER-SmartRoute-2026']
+    ]
+  },
   {
     title: '2D Graphics Editor',
     desc: 'A graphics-based application for creating and editing 2D objects.',
